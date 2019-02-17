@@ -7,5 +7,24 @@
 
       body {
         /* background-image: url("../images/dark-paths/dark-paths.png"); */
-        
+
+      }
+      #goalNumber{
+        float:right;
+        width:50px;
+        height: auto;
+      }
+
+      .row {
+        height: auto;
+        width: 50%;
+      }
+
+      #crystalImages{
+        color:white;
+        border:solid, 20px,black;
+      }
+
+      #scoreboard{
+        color:white;
       }

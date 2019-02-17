@@ -34,7 +34,9 @@ $(document).ready(function () {
   $("#crystalThree").attr("height", "200px");
   $("#crystalFour").attr("height", "200px");
 
-  
+  $("#crystalImages").css("background-color","black");
+  $("#goalNumber").css("background-color", "orange");
+  $("#scoreBoard").css("background-color", "red");
 
   // Lastly, each crystal image (with all it classes and attributes) will get added to the page.
   // $("#crystals").append(imageCrystal);
