@@ -28,3 +28,24 @@
       #scoreboard{
         color:white;
       }
+
+      .jumbotron{
+        background-color:black;
+        
+      }
+      h2{
+
+        color:orangered;
+      }
+
+      h1{
+        color:orangered;
+      }
+
+      .my-4{
+        color:orangered;
+      }
+  
+      .container-fluid{
+       color:red;
+      }
