@@ -36,7 +36,13 @@ $(document).ready(function () {
     $('#currentScore').append(score);
   };
 
-  updater()
+  var goal= function(){
+  $('#goalScore').append(goalScore);
+  }
+
+  goal();
+  updater();
+
  $('.crystalClick').on("click", function(){
   console.log($(this).attr("dataCrystal")); 
   score = score + parseInt($(this).attr("dataCrystal"));
