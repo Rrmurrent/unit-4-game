@@ -16,16 +16,22 @@
 <body>
     <div class="jumbotron container-fluid">
         <h1 class="display-4">Crystal Guessing Game</h1>
-              <img id="crystalOne" class="crystalClick crystalDecor">
-              <img id="crystalTwo" class="crystalClick crystalDecor">
-              <img id="crystalThree" class="crystalClick crystalDecor">
-              <img id="crystalFour" class="crystalClick crystalDecor">
+              <img id="crystalOne" class="crystalClick crystalDecor data-crystalValue">
+              <img id="crystalTwo" class="crystalClick crystalDecor data-crystalValue">
+              <img id="crystalThree" class="crystalClick crystalDecor data-crystalValue">
+              <img id="crystalFour" class="crystalClick crystalDecor data-crystalValue">
         <div class ="scoreBox">
           <h2>Score Board Box</h2>
         </div>
         <div class = "goalBox">
-          <h2>Goal Box</h2>
-        </div>
+
+            <h2><strong>Goal Box</strong></h2>
+            <div id = goalScore></div>
+            
+            <h2><strong>Current Score</strong></h2>
+            <div id = "currentScore"></div>
+        
+          </div>
 
         <hr class="my-4">
         <p><strong>Welcome to the magical game of Crystal Craziness! In this game you have to guess the number value of
