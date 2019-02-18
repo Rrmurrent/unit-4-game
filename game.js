@@ -1,12 +1,10 @@
-
+  var goalScore = Math.floor(Math.random()*55);
+  var score = 0;
 
 
 
 
 $(document).ready(function () {
-  var goalScore = Math.floor(Math.random()*55);
-  var score = 0;
-
   var imageArray = ["assets/images/pinkCrystal.jpg", "assets/images/purpleCrystal.jpg", "assets/images/whiteCrystal.jpg", "assets/images/blueCrystal.jpg"];
 
   var crystalImage = {
@@ -31,10 +29,7 @@ $(document).ready(function () {
   $("#crystalThree").attr("src", imageArray[2]);
   $("#crystalFour").attr("src", imageArray[3]);
 
-  function updater () {
-    $('#currentScore').html("");
-    $('#currentScore').append(score);
-  };
+  
 
   var goal= function(){
   $('#goalScore').append(goalScore);
@@ -42,15 +37,36 @@ $(document).ready(function () {
 
   goal();
   updater();
+});
 
- $('.crystalClick').on("click", function(){
+function updater () {
+    $('#currentScore').html("");
+    $('#currentScore').append(score);
+  };
+ $(document).on("click", '.crystalClick', function(){
   console.log($(this).attr("dataCrystal")); 
   score = score + parseInt($(this).attr("dataCrystal"));
   updater();
+  checker();
    //add datacrystal to score
    //call score function( updater() )
  })
-})
+
+var checker = function(){
+  if (score===goalScore){
+  win();
+  } else if (score > goalScore){
+    lose();
+  }
+}
+
+var win = function(){
+alert("You Win yay!");
+};
+
+var lose = function(){
+alert("You Lose");
+};
 
 
 
