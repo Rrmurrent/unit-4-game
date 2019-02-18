@@ -62,10 +62,12 @@ var checker = function(){
 
 var win = function(){
 alert("You Win yay!");
+document.location.reload()
 };
 
 var lose = function(){
 alert("You Lose");
+document.location.reload()
 };
 
 
