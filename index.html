@@ -16,35 +16,75 @@
 </head>
 
 <body>
-    <div class="container-fluid">
-        <h1 class="display-4">Crystal Guessing Game</h1>
+    <div class="container">
+        <div class="jumbotron text-center">
+          <h1>Crystal Madness</h1>
+          <!-- <h1 class="display-4">Crystal Guessing Game</h1> -->
               <img id="crystalOne" class="crystalClick crystalDecor data-crystalValue">
               <img id="crystalTwo" class="crystalClick crystalDecor data-crystalValue">
               <img id="crystalThree" class="crystalClick crystalDecor data-crystalValue">
               <img id="crystalFour" class="crystalClick crystalDecor data-crystalValue">
-              
-        <div class ="scoreBox">
-          <h2><strong>Score Board Box</strong></h2>
         </div>
-        <div class = "goalBox">
+     
+  <!-- container-fluid encomppases the entire page -->
+              <div class="container-fluid">
 
-            <h2><strong>Goal Box</strong></h2>
-            <div id = goalScore></div>
-            
-            <h2><strong>Current Score</strong></h2>
-            <div id = "currentScore"></div>
-        
-          </div>
+                <!-- First Row -->
+                  <div class="row">
 
-        <hr class="my-4">
-        <p><strong>Welcome to the magical game of Crystal Craziness! In this game you have to guess the number value of
-            each crystal to try and attain the goal score.</strong></p>
-       
-      
-  
-  <footer class="container-fluid text-center">
-    <h1><strong>Thats All For Now Folks</strong></h1>
-  </footer>
+                    <div class="col-Lg-8">
+                      <div id = "goalScore">
+                      <h2><strong>Number to Win</strong></h2> 
+                    </div>
+                  </div>
+                
+<br>
+                  
+
+                      <div class="col-Lg-4">
+                        <div id= "instructions">
+                        <h2>Instructions</h2> 
+                          <p><strong>Welcome to the magical game of Crystal Craziness! In this game you have to guess the number value of
+                            each crystal to try and attain the goal score.</strong></p>
+                        </div>
+                      </div>
+                  </div>
+                      
+<br>
+
+                      <!-- second Row -->
+                  <div class="row">
+
+                      <!------------------------------------------  -->
+                      <div class="col-Lg-4">
+                          <div id = "currentScore">
+                            <h2>Score</h2>
+                          </div>
+                        </div>
+
+
+<br>
+
+                    <div class="col-Lg-4">
+                        <div id = "scoreBox">
+                          <h2>Total Wins and Losses</h2>
+                      </div>
+                    </div>
+           
+
+<br>
+                      
+               
+          <!-- ------------------------------------------------------- -->
+             <div class="col-Lg-4">
+                      <div id = "goalBox">
+                      <!-- <h3> Score you need to get to win</h3> -->
+                    </div>
+                  </div>
+                  <!-- end div to second row -->
+                </div>
+            <!-- All divs closed from sendcond row on-->
+ </div>
 </div>
 </body>
 </html>

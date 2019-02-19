@@ -1,12 +1,18 @@
   var goalScore = Math.floor(Math.random()*55);
   var score = 0;
+  $(document).ready(function () {
+
+  // $("#goalScore").css("border", "solid","white");
+  $("#currentScore").css("border","solid","white");
+  $("#scoreBox").css("border","solid","white");
+  $("#instructions").css("border","solid","black");
+  $(".crystalDecor").css("border","solid", "black");
+  $(".col-Lg-6").css("border","solid","black");
+  $(".jumbotron").css("border","solid","black");
+  $(".col-Lg-8").css("border","solid","black");
 
 
-
-
-$(document).ready(function () {
   var imageArray = ["assets/images/pinkCrystal.jpg", "assets/images/purpleCrystal.jpg", "assets/images/whiteCrystal.jpg", "assets/images/blueCrystal.jpg"];
-
   var crystalImage = {
 // function to give the crystal values random #
 // can also use to generate the goal score-- will have to change the parameters. 
@@ -30,6 +36,7 @@ $(document).ready(function () {
   $("#crystalFour").attr("src", imageArray[3]);
 
   
+ 
 
   var goal= function(){
   $('#goalScore').append(goalScore);
@@ -41,7 +48,9 @@ $(document).ready(function () {
 
 function updater () {
     $('#currentScore').html("");
-    $('#currentScore').append(score);
+    $('#currentScore').html("score:").append(score).css("text-decoration-line","underline");
+    
+    
   };
  $(document).on("click", '.crystalClick', function(){
   console.log($(this).attr("dataCrystal")); 
@@ -69,6 +78,7 @@ var lose = function(){
 alert("You Lose");
 document.location.reload()
 };
+
 
 
 
