@@ -64,6 +64,7 @@ h2{
             background-color:skyblue;
             position: inherit;
             text-align:center;  
+            /* text-decoration-line: underline; */
       }
 
       #scoreBox{

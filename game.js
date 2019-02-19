@@ -1,5 +1,7 @@
   var goalScore = Math.floor(Math.random()*55);
   var score = 0;
+  $("img").addClass("animated bounce");
+  
   $(document).ready(function () {
 
   // $("#goalScore").css("border", "solid","white");
@@ -10,7 +12,7 @@
   $(".col-Lg-6").css("border","solid","black");
   $(".jumbotron").css("border","solid","black");
   $(".col-Lg-8").css("border","solid","black");
-
+  
 
   var imageArray = ["assets/images/pinkCrystal.jpg", "assets/images/purpleCrystal.jpg", "assets/images/whiteCrystal.jpg", "assets/images/blueCrystal.jpg"];
   var crystalImage = {
@@ -48,7 +50,7 @@
 
 function updater () {
     $('#currentScore').html("");
-    $('#currentScore').html("score:").append(score).css("text-decoration-line","underline");
+    $('#currentScore').html("score: ").append(score);
     
     
   };
