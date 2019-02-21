@@ -44,17 +44,27 @@ h2{
             text-decoration-line: underline;
 }
 
-      #goalScore{
+      #numberToWin{
             width: 100%;
             height:auto;
             font-size: 35px;
             font-weight: bold;
             background-color:skyblue;
             text-align:center;  
+            border: solid, 10px, black;
       }
       
 
-
+      #wins{
+            width: 100%;
+            height:auto;
+            font-size: 35px;
+            font-weight: bold;
+            background-color:skyblue;
+            text-align:center;  
+            border: solid, 10px, black;
+      }
+      
 
       #currentScore{
             width: 100%;
@@ -76,8 +86,8 @@ h2{
             background-color:skyblue;
       }
 
-
+/* 
       .dataCrystal{
             text-align:center;  
-      }
+      } */
      
