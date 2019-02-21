@@ -2,10 +2,10 @@
 
 var goalScore = Math.floor(Math.random()*55);
   var score = 0;
-  var wins = 0;
-    // $("#wins").text(wins);
-  var loss = 0;
-    // $("#loss").text(loss);
+  var totalWins = 0;
+    // $("#totalWins").text(wins);
+  var totalLoss = 0;
+    // $("#totalLoss").text(loss);
 
   //  var scoreReset = function(){
   //       score = 0;
@@ -16,14 +16,14 @@ var goalScore = Math.floor(Math.random()*55);
    
  
  
-   $("#currentScore").css("border","solid","white");
+  $("#currentScore").css("border","solid","white");
   $("#scoreBox").css("border","solid","white");
   $("#instructions").css("border","solid","black");
   $(".crystalDecor").css("border","solid", "black");
   $(".col-Lg-6").css("border","solid","black");
   $(".jumbotron").css("border","solid","black");
   $(".col-Lg-8").css("border","solid","black");
-  $("#wins").css("border","solid","black");
+  $("#totalWins").css("border","solid","black");
 
   var imageArray = ["assets/images/pinkCrystal.jpg", "assets/images/purpleCrystal.jpg", "assets/images/whiteCrystal.jpg", "assets/images/blueCrystal.jpg"];
 
@@ -54,8 +54,8 @@ var goalScore = Math.floor(Math.random()*55);
   }
 
   goal();
-  // updater();
-  // wins()
+  updater();
+  // totalWins()
 
 
 function updater () {
@@ -84,17 +84,18 @@ var checker = function(){
 
 var win = function(){
 alert("You Win yay!");
-wins ++;
+totalWins = totalWins + 1;
+totalWins();
 
 function updater() {
-  // $('#wins').html("score: ").append(wins);
+  $('#wins').html("score: ").append(wins);
 }
 updater();
 };
 
 var lose = function(){
 alert("You Lose");
-// lose ++;
+totalLoss = totalLoss + 1;
 
 
 }
