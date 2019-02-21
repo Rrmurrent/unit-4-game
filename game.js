@@ -2,20 +2,20 @@
 
 var goalScore = Math.floor(Math.random()*55);
   var score = 0;
-  var totalWins = 0;
-    // $("#totalWins").text(wins);
-  var totalLoss = 0;
-    // $("#totalLoss").text(loss);
-
-  //  var scoreReset = function(){
-  //       score = 0;
-        
-        // updater()
-  
+    var totalWins = 0;
+    var totalLoss = 0;
+    
   $(document).ready(function () {
-   
- 
- 
+
+
+    $("#totalWins").append(totalWins);
+    // totalWins()
+
+    
+  $("#totalLoss").append(totalLoss);
+    // totalLoss()
+
+
   $("#currentScore").css("border","solid","white");
   $("#scoreBox").css("border","solid","white");
   $("#instructions").css("border","solid","black");
@@ -86,6 +86,11 @@ var win = function(){
 alert("You Win yay!");
 totalWins = totalWins + 1;
 totalWins();
+updater();
+
+// var scoreReset = function(){
+//          = 0;
+// scoreReset();
 
 function updater() {
   $('#wins').html("score: ").append(wins);
